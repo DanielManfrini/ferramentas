@@ -1,6 +1,7 @@
 html {
+    color: var(--color-text) !important;
     font-family: sans-serif;
-    background-color: #F5EDED;
+    background-color: var(--color-primary);
     height: 100vh;
 }
 

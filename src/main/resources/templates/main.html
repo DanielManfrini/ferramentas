@@ -13,34 +13,30 @@
   <link rel="stylesheet" href="/css/topBar.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/card.css">
+  <link rel="stylesheet" href="/css/theme.css">
 </head>
 
 <body>
-  <div class="body-header">
-    <div class="topBar-box">
-      <header>
-        <h2 style="color: #fff;" >Ferramentas</h2>
-      </header>
+
+  <header class="body-header" th:include="topBar"></header>
+
+  <nav class="navBar-box">
+    <ul>
+      <li><a href="#" onclick="loadContent('/home')">Home</a></li>
+      <li><a href="#" onclick="loadContent('/user')">User</a></li>
+    </ul>
+  </nav>
+
+  <main class="body-content">
+
+    <div id="card-box" class="card-box">
+
     </div>
-  </div>
 
-  <div class="body-content">
+  </main>
 
-    <div class="card-box">
-
-      <div>
-        <header>
-          <h2>Teste de página java</h2>
-        </header>
-      </div>
-
-      <hr>
-
-      <div>
-        <h2>Coteudo</h2>
-      </div>
-    </div>
-  </div>
 </body>
+
+<script src="/js/main.js"></script>
 
 </html>

@@ -1,7 +1,39 @@
 .topBar-box{
-    background-color: #6482AD;
+    background-color: var(--color-quaternary);
     width: 100%;
-    height: 45px;
-    border-bottom: 1px solid #7FA1C3;
+    height: 50px;
+    display: flex;
+    align-items: center;
     /* position: fixed; */
+}
+
+.navBar-box{
+    background-color: var(--color-tertiary);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--color-decoration);
+}
+
+.navBar-box > ul {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.navBar-box > ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navBar-box > ul > li > a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.navBar-box > ul > li > a:hover {
+    color: var(--color-primary);
 }

@@ -8,7 +8,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ferramentasController {
 
     @GetMapping("/")
-    public String home(Model model) {
-       return "main";
+    public String main(Model model) {
+        return "main";
     }
+
+    @GetMapping("/home")
+    public String home(Model model) {
+        return "home/home";
+    }
+
+    @GetMapping("/user")
+    public String user(Model model) {
+        return "user/userForm";
+    }
+
 }
